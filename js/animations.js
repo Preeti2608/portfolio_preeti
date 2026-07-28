@@ -1,6 +1,11 @@
 /* ================= ROLE CYCLER ================= */
 export function initRoleCycler(){
-  const roles = ['Backend Developer','AI Engineer','DevOps Learner'];
+  const roles = [
+  'Software Engineering Student',
+  'Backend Enthusiast',
+  'AI Enthusiast',
+  'DevOps Learner'
+];
   const el = document.getElementById('roleCycle');
   let idx = 0;
   setInterval(()=>{
