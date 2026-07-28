@@ -1,0 +1,67 @@
+/* ---------- Hero ---------- */
+#home{ min-height:100vh; display:flex; align-items:center; padding-top:140px; padding-bottom:60px; }
+.hero-grid{ display:grid; grid-template-columns:1.1fr 0.9fr; gap:40px; align-items:center; }
+@media (max-width:960px){
+  #home{ padding-top:120px; padding-bottom:40px; }
+  .hero-grid{ grid-template-columns:1fr; gap:56px; text-align:center; }
+  .hero-actions{ justify-content:center; }
+  .hero-stats{ justify-content:center; }
+  .role-line{ justify-content:center; }
+  .hero-headline{ margin-left:auto; margin-right:auto; }
+}
+@media (max-width:600px){
+  #home{ padding-top:104px; }
+  .hero-grid{ gap:44px; }
+}
+
+.hero-name{ font-size:clamp(40px,6.4vw,76px); font-weight:700; line-height:1.02; margin-top:22px; }
+.hero-name .grad{ background:linear-gradient(100deg,var(--cyan) 10%, var(--primary) 55%, #b39dff 90%); -webkit-background-clip:text; background-clip:text; color:transparent; }
+
+.role-line{ margin-top:18px; font-family:var(--font-mono); font-size:15px; color:var(--muted); display:flex; align-items:center; gap:10px; height:22px; }
+.role-line .role-cycle{ color:var(--amber); }
+.role-line .role-cursor{ display:inline-block; width:7px; height:16px; background:var(--amber); animation:blink 0.9s steps(1) infinite; }
+
+.hero-headline{ margin-top:26px; font-size:clamp(15px,1.7vw,18px); color:var(--muted); max-width:520px; line-height:1.75; }
+
+.hero-actions{ display:flex; gap:14px; margin-top:38px; flex-wrap:wrap; }
+.btn-primary, .btn-ghost{
+  font-family:var(--font-mono); font-size:13.5px; padding:14px 24px; border-radius:11px; display:inline-flex; align-items:center; justify-content:center; gap:10px;
+  transition:transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  min-height:48px;
+}
+.btn-primary{ background:linear-gradient(135deg,var(--primary),#8b7cff); color:#fff; border:1px solid rgba(255,255,255,0.16); box-shadow:0 0 0 rgba(108,99,255,0); }
+.btn-primary:hover{ transform:translateY(-2px); box-shadow:0 12px 30px -8px var(--primary-soft); }
+.btn-ghost{ background:var(--panel); color:var(--text); border:1px solid var(--border); }
+.btn-ghost:hover{ border-color:var(--cyan); color:var(--cyan); transform:translateY(-2px); }
+
+.hero-stats{ display:flex; gap:34px; margin-top:52px; flex-wrap:wrap; }
+.hero-stat b{ display:block; font-family:var(--font-display); font-size:24px; color:var(--text); }
+.hero-stat span{ font-family:var(--font-mono); font-size:11.5px; color:var(--muted-dim); letter-spacing:0.06em; text-transform:uppercase; }
+
+@media (max-width:520px){
+  .hero-actions{ flex-direction:column; align-items:stretch; }
+  .hero-actions .btn-primary, .hero-actions .btn-ghost{ width:100%; }
+  .hero-stats{ gap:16px 28px; margin-top:40px; }
+  .hero-stat b{ font-size:21px; }
+}
+
+/* Hero visual - neural orb */
+.orb-wrap{ position:relative; width:100%; aspect-ratio:1/1; max-width:460px; margin:0 auto; }
+@media (max-width:600px){ .orb-wrap{ max-width:300px; } }
+@media (max-width:380px){ .orb-wrap{ max-width:250px; } }
+.orb-ring{ position:absolute; inset:0; border-radius:50%; border:1px solid var(--border); }
+.orb-ring.r1{ inset:0; animation:spin 40s linear infinite; }
+.orb-ring.r2{ inset:38px; border-style:dashed; border-color:var(--border-soft); animation:spin 55s linear infinite reverse; }
+.orb-ring.r3{ inset:78px; animation:spin 30s linear infinite; }
+@keyframes spin{ to{ transform:rotate(360deg); } }
+.orb-core{
+  position:absolute; inset:38%; border-radius:50%;
+  background:radial-gradient(circle at 35% 30%, rgba(108,99,255,0.55), rgba(34,211,238,0.28) 45%, rgba(5,7,12,0) 75%);
+  filter:blur(0.5px);
+  box-shadow:0 0 90px 20px rgba(108,99,255,0.25), inset 0 0 60px rgba(34,211,238,0.15);
+  animation:corepulse 4.5s ease-in-out infinite;
+}
+@keyframes corepulse{ 0%,100%{ transform:scale(1); } 50%{ transform:scale(1.06); } }
+.orb-node{ position:absolute; width:8px; height:8px; border-radius:50%; background:var(--cyan); box-shadow:0 0 12px var(--cyan); }
+.orb-node.n2{ background:var(--primary); box-shadow:0 0 12px var(--primary); }
+.orb-node.n3{ background:var(--amber); box-shadow:0 0 12px var(--amber); }

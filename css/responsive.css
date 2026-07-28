@@ -1,0 +1,19 @@
+/* ---------- Global responsive spacing ---------- */
+/* Component-specific breakpoints live in their own component stylesheet
+   (navbar.css, hero.css, about.css, etc.) right next to the rules they
+   affect. This file holds the cross-cutting, page-wide responsive rules
+   that apply across every section. */
+
+@media (max-width:1024px){ section{ padding:96px 0; } }
+@media (max-width:768px){ section{ padding:72px 0; } }
+@media (max-width:480px){
+  .container{ padding:0 18px; }
+  section{ padding:56px 0; }
+}
+@media (max-width:360px){
+  .container{ padding:0 14px; }
+}
+
+@media (prefers-reduced-motion: reduce){
+  *{ animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition-duration:0.01ms !important; scroll-behavior:auto !important; }
+}

@@ -1,0 +1,13 @@
+/*
+ * Only page-specific overrides live here — the actual card, badge,
+ * grid, and hover styles are the same shared rules from style.css
+ * (.glass-card, .cert-grid, .cert-card, .cert-badge, .cert-view),
+ * so this page renders with the exact same component as the home page.
+ */
+.cert-page{
+    padding:120px 0;
+}
+
+.cert-page .section-head{
+    margin-bottom:56px;
+}

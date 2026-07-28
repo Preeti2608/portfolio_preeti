@@ -1,0 +1,13 @@
+/* ---------- Footer ---------- */
+footer{ border-top:1px solid var(--border-soft); padding:36px 0; }
+.footer-inner{ display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px; }
+.footer-inner .fmono{ font-family:var(--font-mono); font-size:12px; color:var(--muted-dim); }
+.footer-links{ display:flex; gap:20px; }
+.footer-links a{ font-family:var(--font-mono); font-size:12px; color:var(--muted); transition:color 0.25s; padding:6px 2px; min-height:32px; display:inline-flex; align-items:center; }
+.footer-links a:hover{ color:var(--cyan); }
+
+@media (max-width:600px){
+  footer{ padding:28px 0; }
+  .footer-inner{ flex-direction:column; text-align:center; gap:14px; }
+  .footer-links{ gap:22px; }
+}

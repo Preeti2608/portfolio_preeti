@@ -1,0 +1,11 @@
+/* ---------- AI Expertise ---------- */
+.ai-section{ background:radial-gradient(ellipse 900px 500px at 50% 20%, rgba(108,99,255,0.08), transparent 70%); }
+.ai-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
+@media (max-width:1000px){ .ai-grid{ grid-template-columns:repeat(3,1fr); } }
+@media (max-width:760px){ .ai-grid{ grid-template-columns:repeat(2,1fr); } }
+@media (max-width:480px){ .ai-grid{ grid-template-columns:1fr; } }
+.ai-card{ padding:22px; text-align:left; }
+.ai-card .ai-num{ font-family:var(--font-mono); font-size:11px; color:var(--muted-dim); }
+.ai-card h4{ font-size:15.5px; margin-top:10px; font-weight:600; }
+.ai-card p{ font-size:12.5px; color:var(--muted); margin-top:8px; line-height:1.6; }
+.ai-card .ai-bar{ height:3px; width:36px; background:linear-gradient(90deg,var(--cyan),var(--primary)); border-radius:3px; margin-bottom:2px; }

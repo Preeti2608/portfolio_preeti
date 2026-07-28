@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Preeti Mittal — AI &amp; Backend Engineer</title>
+<meta name="description" content="Preeti Mittal — Backend Developer, AI Engineer, DevOps Learner. Building intelligent systems for the future." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="css/hero.css">
+<link rel="stylesheet" href="css/about.css">
+<link rel="stylesheet" href="css/skills.css">
+<link rel="stylesheet" href="css/projects.css">
+<link rel="stylesheet" href="css/ai.css">
+<link rel="stylesheet" href="css/devops.css">
+<link rel="stylesheet" href="css/contact.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="boot-lock">
+<a href="#home" class="skip-link">Skip to content</a>
+
+<!-- BOOT SEQUENCE -->
+<div id="boot-screen" aria-hidden="true">
+  <div class="boot-box">
+    <div id="boot-lines"></div>
+    <div class="boot-bar-track"><div class="boot-bar-fill" id="boot-bar"></div></div>
+  </div>
+</div>
+
+<canvas id="bg-canvas"></canvas>
+<div class="grain-overlay"></div>
+<div class="vignette"></div>
+
+<div class="wrap">
+
+  <!-- NAV -->
+  <header id="nav">
+    <div class="nav-inner">
+      <a href="#home" class="logo"><span class="sq"></span>PREETI.MITTAL<span class="suffix" style="color:var(--muted-dim)">// _sys</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#ai">AI&nbsp;Core</a>
+        <a href="#devops">DevOps</a>
+        <a href="#journey">Journey</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">☰</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home">
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow"><span class="dot"></span>SYSTEM ONLINE · READY TO BUILD</span>
+        <h1 class="hero-name">Preeti<br><span class="grad">Mittal</span></h1>
+        <div class="role-line mono"><span>&gt;</span> <span class="role-cycle" id="roleCycle">Backend Developer</span><span class="role-cursor"></span></div>
+        <h2 class="hero-headline" style="font-family:var(--font-display); color:var(--text); font-size:clamp(20px,2.6vw,28px); font-weight:600; line-height:1.3;">Building Intelligent Systems<br>for the Future.</h2>
+        <p class="hero-headline">Building intelligent backend systems, AI applications, and cloud-ready software while learning production-grade engineering — one system at a time.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">View Projects <span aria-hidden="true">→</span></a>
+          <a href="assets/resume.pdf" download="Preeti_Mittal_Resume.pdf" class="btn-ghost">Download Resume ↓</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat"><b>13</b><span>Public Repos</span></div>
+          <div class="hero-stat"><b>4+</b><span>AI / Full-Stack Projects</span></div>
+          <div class="hero-stat"><b>3rd Yr</b><span>B.Tech Software Eng.</span></div>
+        </div>
+      </div>
+      <div>
+        <div class="orb-wrap" id="orbWrap">
+          <div class="orb-ring r1"></div>
+          <div class="orb-ring r2"></div>
+          <div class="orb-ring r3"></div>
+          <div class="orb-core"></div>
+          <div class="orb-node" style="top:2%; left:48%;"></div>
+          <div class="orb-node n2" style="top:48%; left:0%;"></div>
+          <div class="orb-node n3" style="top:80%; left:70%;"></div>
+          <div class="orb-node n2" style="top:20%; left:85%;"></div>
+          <div class="orb-node" style="top:70%; left:12%;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">01 / SYSTEM_INFO</span>
+        <h2>About the operator</h2>
+        <p>A quick diagnostic on who's behind the code — run straight from the terminal.</p>
+      </div>
+      <div class="about-grid">
+        <div class="terminal reveal">
+          <div class="terminal-bar">
+            <span class="tdot t1"></span><span class="tdot t2"></span><span class="tdot t3"></span>
+            <span>preeti@systems — zsh</span>
+          </div>
+          <div class="terminal-body" id="terminalBody"></div>
+        </div>
+        <div class="reveal reveal-delay-1">
+          <h3 style="font-size:24px; font-weight:600;">Third-year Software Engineering student, building for production from day one.</h3>
+          <p style="color:var(--muted); margin-top:16px; line-height:1.8; font-size:15px;">
+            I'm Preeti — a B.Tech Software Engineering student from India who turns ideas into real, working products by combining AI, backend engineering, modern web tech, and cloud computing. My goal is scalable, production-ready systems that create meaningful impact.
+          </p>
+          <div class="about-chip-grid">
+            <span class="about-chip"><span class="ic">◆</span> Software Engineering Student</span>
+            <span class="about-chip"><span class="ic">◆</span> Backend Development</span>
+            <span class="about-chip"><span class="ic">◆</span> Artificial Intelligence</span>
+            <span class="about-chip"><span class="ic">◆</span> DevOps</span>
+            <span class="about-chip"><span class="ic">◆</span> Cloud Computing</span>
+            <span class="about-chip"><span class="ic">◆</span> Problem Solver</span>
+            <span class="about-chip"><span class="ic">◆</span> Continuous Learner</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">02 / CAPABILITIES</span>
+        <h2>Skills &amp; Tech Stack</h2>
+        <p>The tools and languages I use to design, build, and ship intelligent software.</p>
+      </div>
+      <div class="skills-grid" id="skillsGrid"></div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">03 / DEPLOYED_SYSTEMS</span>
+        <h2>Featured Projects</h2>
+        <p>Production-minded builds spanning AI assistants, research agents, and full-stack platforms.</p>
+      </div>
+      <div class="projects-grid" id="projectsGrid"></div>
+    </div>
+  </section>
+
+  <!-- AI EXPERTISE -->
+  <section id="ai" class="ai-section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">04 / AI_CORE</span>
+        <h2>AI Expertise</h2>
+        <p>The building blocks I use to design intelligent, context-aware, memory-driven applications.</p>
+      </div>
+      <div class="ai-grid" id="aiGrid"></div>
+    </div>
+  </section>
+
+  <!-- DEVOPS -->
+  <section id="devops">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">05 / INFRASTRUCTURE</span>
+        <h2>Production Architecture</h2>
+        <p>How a request travels through a system I'd deploy — watch the request pulse move through the stack.</p>
+      </div>
+      <div class="glass-card reveal" style="padding:26px 22px 10px;">
+        <div class="flow-wrap">
+          <div class="flow-row" id="flowRow"></div>
+        </div>
+        <p class="devops-caption">Live request-flow simulation — Browser → Nginx → Docker → FastAPI → Redis → PostgreSQL → Cloud</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE / JOURNEY -->
+  <section id="journey">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">06 / LEARNING_LOG</span>
+        <h2>Experience &amp; Journey</h2>
+        <p>A running log of how the stack has grown, one build at a time.</p>
+      </div>
+      <div class="timeline reveal" id="timeline"></div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">07 / CREDENTIALS</span>
+        <h2>Certifications</h2>
+        <p>Structured learning from organizations I've trained with.</p>
+      </div>
+      <div class="cert-grid" id="certGrid"></div>
+    </div>
+  </section>
+
+  <!-- GITHUB -->
+  <section id="github">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">08 / ACTIVITY_FEED</span>
+        <h2>GitHub Analytics</h2>
+        <p>Live stats pulled straight from <span class="mono" style="color:var(--cyan);">github.com/Preeti2608</span>.</p>
+      </div>
+      <div class="gh-grid">
+        <div class="glass-card gh-card reveal">
+          <!-- <img src="https://github-readme-stats.vercel.app/api?username=Preeti2608&show_icons=true&hide_border=true&bg_color=00000000&title_color=22D3EE&icon_color=FBBF24&text_color=C7CBE0&rank_icon=github" alt="Preeti Mittal's GitHub stats" loading="lazy" />-->
+           <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=Preeti2608&show_icons=true&hide_border=true&bg_color=00000000&title_color=22D3EE&icon_color=FBBF24&text_color=C7CBE0&rank_icon=github" alt="Preeti Mittal's GitHub stats" loading="lazy" />
+        </div>
+        <div class="glass-card gh-card reveal reveal-delay-1">
+          <!-- <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Preeti2608&layout=compact&hide_border=true&bg_color=00000000&title_color=22D3EE&text_color=C7CBE0" alt="Preeti Mittal's most used languages" loading="lazy" /> -->
+          <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Preeti2608&layout=compact&hide_border=true&bg_color=00000000&title_color=22D3EE&text_color=C7CBE0" alt="Preeti Mittal's most used languages" loading="lazy" />
+        </div>
+        <div class="glass-card gh-card gh-full reveal reveal-delay-2">
+          <!-- <img src="https://github-readme-streak-stats.herokuapp.com/?user=Preeti2608&hide_border=true&background=00000000&ring=22D3EE&fire=FBBF24&currStreakLabel=22D3EE" alt="Preeti Mittal's GitHub streak stats" loading="lazy" /> -->
+           <img src="https://github-readme-streak-stats.herokuapp.com/?user=Preeti2608&hide_border=true&background=05070C&ring=22D3EE&fire=FBBF24&currStreakLabel=22D3EE&sideNums=E9EBF6&currStreakNum=22D3EE&sideLabels=8890B0&dates=C7CBE0"
+        </div>
+        <div class="glass-card gh-card gh-full reveal reveal-delay-3">
+          <img src="https://github-readme-activity-graph.vercel.app/graph?username=Preeti2608&theme=react-dark&hide_border=true&bg_color=00000000&color=22D3EE&line=6C63FF&point=FBBF24" alt="Preeti Mittal's contribution activity graph" loading="lazy" />
+        </div>
+      </div>
+      <div class="gh-links reveal">
+        <a href="https://github.com/Preeti2608" target="_blank" rel="noopener" class="btn-ghost">GitHub Profile ↗</a>
+        <a href="https://github.com/Preeti2608?tab=repositories" target="_blank" rel="noopener" class="btn-ghost">All Repositories ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <span class="eyebrow reveal"><span class="dot"></span>OPEN TO INTERNSHIPS &amp; COLLABORATIONS</span>
+      <h2 class="contact-headline reveal" style="margin-top:22px;">Let's Build the <span class="grad">Future</span> Together.</h2>
+      <p class="reveal" style="color:var(--muted); max-width:520px; margin:20px auto 0; font-size:15.5px; line-height:1.7;">Open to software engineering internships, AI/ML projects, hackathons, and technical collaborations.</p>
+
+      <div class="contact-links reveal">
+        <a href="mailto:preeti.mittal2608@gmail.com">✉ preeti.mittal2608@gmail.com</a>
+        <a href="https://www.linkedin.com/in/preeti-mittal2608" target="_blank" rel="noopener">in/ LinkedIn</a>
+        <a href="https://github.com/Preeti2608" target="_blank" rel="noopener">⌥ GitHub</a>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm">
+        <div class="row">
+          <input type="text" name="name" placeholder="Your name" required aria-label="Your name" />
+          <input type="email" name="email" placeholder="Your email" required aria-label="Your email" />
+        </div>
+        <textarea name="message" placeholder="Tell me about your project or opportunity…" required aria-label="Message"></textarea>
+        <button type="submit">Send Message →</button>
+        <p class="form-note">Opens your email client with this message pre-filled.</p>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-inner">
+      <span class="fmono">© 2026 Preeti Mittal — Turning ideas into intelligent software.</span>
+      <div class="footer-links">
+        <a href="https://github.com/Preeti2608" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/preeti-mittal2608" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:preeti.mittal2608@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
